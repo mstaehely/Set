@@ -46,7 +46,7 @@ public class Deck extends LinkedList<Card> {
     private void shuffleDeck() {
         LinkedList new_deck = new LinkedList<Card>();
         Random rng = new Random();
-        for (int i = 81; i <= 0; i--) {
+        for (int i = 81; i >= 0; i--) {
             new_deck.add(this.remove(rng.nextInt(i)));
         }
         this.clear();
