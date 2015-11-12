@@ -29,6 +29,9 @@ public class SetCheck {
                               card3.getShading(), card3.getNumber());
     }
 
+    /**
+     * Default constructor, allows class to be initialized.
+     */
     public SetCheck(){
         this.card1 = null;
         this.card2 = null;

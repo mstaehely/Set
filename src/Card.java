@@ -90,6 +90,11 @@ public class Card{
         return this.number;
     }
 
+    /**
+     * Returns a String representation of a Card.
+     *
+     * @return the String representation of a Card.
+     */
     public String toString(){
         String string = "";
         switch (this.getColor()){

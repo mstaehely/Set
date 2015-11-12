@@ -20,6 +20,11 @@ public class Set{
         this.card3 = card3;
     }
 
+    /**
+     * Returns a String representation of a Set.
+     *
+     * @return the String representation of a Set.
+     */
     public String toString(){
         String string = "";
         string += "Card1: " + card1 + "Card2: " + card2 + "Card3: " + card3;
