@@ -22,7 +22,7 @@ public class Set{
 
     public String toString(){
         String string = "";
-        string += "Card1:\n" + card1 + "Card2:\n" + card2 + "Card3:" + card3;
+        string += "Card1: " + card1 + "Card2: " + card2 + "Card3: " + card3;
         return string;
     }
 }

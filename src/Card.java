@@ -93,27 +93,27 @@ public class Card{
     public String toString(){
         String string = "";
         switch (this.getColor()){
-            case 0: string += "Red\n";
+            case 0: string += "Red, ";
                 break;
-            case 1: string += "Green\n";
+            case 1: string += "Green, ";
                 break;
-            case 2: string += "Purple\n";
+            case 2: string += "Purple, ";
                 break;
         }
         switch (this.getShape()) {
-            case 0: string += "Diamond\n";
+            case 0: string += "Diamond, ";
                 break;
-            case 1: string += "Squiggle\n";
+            case 1: string += "Squiggle, ";
                 break;
-            case 2: string += "Oval\n";
+            case 2: string += "Oval, ";
                 break;
         }
         switch (this.getShading()) {
-            case 0: string += "Solid\n";
+            case 0: string += "Solid, ";
                 break;
-            case 1: string += "Empty\n";
+            case 1: string += "Empty, ";
                 break;
-            case 2: string += "Striped\n";
+            case 2: string += "Striped, ";
                 break;
         }
         switch (this.getNumber()) {

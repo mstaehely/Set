@@ -22,7 +22,7 @@ public class SetCheck {
      */
     public SetCheck(Card card1, Card card2, Card card3){
         this.card1 = new Card(card1.getColor(), card1.getShape(),
-                              card1.getShading(), card2.getNumber());
+                              card1.getShading(), card1.getNumber());
         this.card2 = new Card(card2.getColor(), card2.getShape(),
                               card2.getShading(), card2.getNumber());
         this.card3 = new Card(card3.getColor(), card3.getShape(),
