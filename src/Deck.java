@@ -10,13 +10,11 @@ import java.util.Random;
  * @version Autumn 2015
  */
 public class Deck extends LinkedList<Card> {
-    LinkedList<Card> deck;
 
     /**
      * Constructor for a new deck of cards. Takes no parameters.
      */
     public Deck() {
-        this.deck = new LinkedList<Card>();
         makeDeck();
         shuffleDeck();
     }
@@ -32,7 +30,7 @@ public class Deck extends LinkedList<Card> {
             for (int j = 0; j <= 2; j++) {
                 for (int k = 0; k <= 2; k++) {
                     for (int l = 0; l <= 2; l++) {
-                        deck.add(new Card(i, j, k, l));
+                        this.add(new Card(i, j, k, l));
                     }
                 }
             }
@@ -49,8 +47,11 @@ public class Deck extends LinkedList<Card> {
         LinkedList new_deck = new LinkedList<Card>();
         Random rng = new Random();
         for (int i = 81; i <= 0; i--) {
-            new_deck.add(deck.remove(rng.nextInt(i)));
+            new_deck.add(this.remove(rng.nextInt(i)));
         }
-        this.deck = new_deck;
+        this.clear();
+        for(int i = 0; i < new_deck.size(); i++){
+            this.add((Card)new_deck.pop());
+        }
     }
 }
