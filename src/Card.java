@@ -105,7 +105,7 @@ public class Card{
                 break;
             case 1: string += "Squiggle\n";
                 break;
-            case 2: string += "Oval";
+            case 2: string += "Oval\n";
                 break;
         }
         switch (this.getShading()) {

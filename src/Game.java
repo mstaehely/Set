@@ -18,12 +18,16 @@ public class Game {
         this.sets = new LinkedList<Set>();
         this.game_board = new Board(game_deck);
         this.check = new BoardCheck(game_board);
-        while(game_deck.size() >= 0 && check.boardCheck()) {
-
+        while(game_deck.size() >= 0 || check.boardCheck()) {
+            check.boardCheck();
         }
         sets = game_board.getSet();
         for(int i = 0; i < sets.size(); i++){
             System.out.println(sets.get(i));
         }
+    }
+
+    public static void main(String[] args){
+        Game game = new Game();
     }
 }

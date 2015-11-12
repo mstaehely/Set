@@ -46,7 +46,7 @@ public class SetCheck {
      */
     public boolean checkForSet() {
         boolean color_set, shape_set, shading_set, number_set;
-        if (card1 == null || card2 == null || card3 != null) {
+        if (card1 == null || card2 == null || card3 == null) {
             return false;
         } else {
             color_set = ((card1.getColor() == card2.getColor() &&
